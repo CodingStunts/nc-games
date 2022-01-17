@@ -1,0 +1,96 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 15% 85%;
+}
+
+.Sidebar {
+  margin-top: 10.1vh;
+  padding-top: 3vh;
+  border: solid 1px black;
+  width: 15vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(255, 204, 185);
+}
+
+.Navbar {
+  display: inline;
+  float: left;
+  position: fixed;
+  border: solid 1px black;
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  background-color: rgb(185, 218, 255);
+}
+
+.Popular {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.StartUp {
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  margin-left: 5vw;
+  margin-right: 30vw;
+  text-align: center;
+}
+
+h3 {
+  display: inline;
+  margin-left: 10vw;
+  margin-right: 0vw;
+}
+
+.LoggedInUser {
+  display: inline;
+  position: absolute;
+  border: 1px black solid;
+  margin-left: 10vw;
+  margin-right: 0vw;
+  background-color: rgb(195, 255, 106);
+}
+
+.Community {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-left: 20px;
+}
+
+.SingleUser {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-left: 20px;
+}
+
+.AllReviews {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-left: 20px;
+}
+
+.SingleReview {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-left: 20px;
+}
+
+.CatReviews {
+  margin-left: 15vw;
+  margin-top: 10vh;
+  padding-left: 20px;
+}
+
+.Comment {
+  border: solid 1px black;
+}
