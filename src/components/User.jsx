@@ -16,7 +16,7 @@ const SingleUser = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.a}>
       <Navbar />
       <Sidebar />
       <div className={styles.SingleUser}>
@@ -24,7 +24,11 @@ const SingleUser = () => {
           <>
             <h1>{user[0].name}</h1>
             <br />
-            <img src={user[0].avatar_url} width="100" />
+            <img
+              src={user[0].avatar_url}
+              width="100"
+              className={styles.UserPic}
+            />
             <br />
             <h3> @{user[0].username}</h3>
           </>

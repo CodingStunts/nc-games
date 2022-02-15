@@ -6,6 +6,7 @@ import { UserContext } from "../contexts/UserContext";
 const CommentCard = ({ comment }) => {
   const [likes, setLikes] = useState(comment.votes);
   const { user } = useContext(UserContext);
+  const commentDate = comment.created_at.slice(0, 10);
 
   const handleUpVote = () => {
     setLikes((currLikes) => {
@@ -21,16 +22,18 @@ const CommentCard = ({ comment }) => {
 
   return (
     <div className={styles.Comment}>
-      <p>{comment.body}</p>
-      <p>By @{comment.author}</p>
-      <p>Posted at {comment.create_at}</p>
-      <p>Upvotes: {likes}</p>
-      <button onClick={handleUpVote}>Like</button>
-      {comment.author === user ? (
-        <>
-          <button onClick={handleDelete}>Delete</button>
-        </>
-      ) : null}
+      <div className={styles.a}>
+        <p>{comment.body}</p>
+        <p>By @{comment.author}</p>
+        <p>Posted on {commentDate}</p>
+        <p>👍 {likes}</p>
+        <button onClick={handleUpVote}>Like</button>
+        {comment.author === user ? (
+          <>
+            <button onClick={handleDelete}>Delete</button>
+          </>
+        ) : null}
+      </div>
     </div>
   );
 };

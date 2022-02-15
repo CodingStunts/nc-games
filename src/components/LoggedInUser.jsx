@@ -11,10 +11,11 @@ const LoggedInUser = () => {
 
   return (
     <div className={styles.LoggedInUser}>
-      <p>You are logged in as:</p>
-      <h3>{user}</h3>
+      <p>Welcome, {user}!</p>
       <Link to="/">
-        <button onClick={handleLogOut}>Log Out</button>
+        <button onClick={handleLogOut} className={styles.Logout}>
+          Log Out
+        </button>
       </Link>
     </div>
   );

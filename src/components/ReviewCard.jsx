@@ -4,9 +4,9 @@ const ReviewCard = ({ review }) => {
   return (
     <div className={styles.ReviewCard}>
       <p>Game title: {review.title}</p>
-      <p>Review author: {review.owner}</p>
       <p>Game designer: {review.designer}</p>
-      <p>Votes: {review.votes} </p>
+      <p>Review author: {review.owner}</p>
+      <p>👍 {review.votes} </p>
     </div>
   );
 };

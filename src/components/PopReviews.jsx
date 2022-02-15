@@ -16,18 +16,20 @@ const PopReviews = () => {
 
   return (
     <div className={styles.Popular}>
-      <h1>Popular Reviews</h1>
-      <ul>
-        {reviews.map((review) => {
-          return (
-            <Link key={review.review_id} to={`/reviews/${review.review_id}`}>
-              <li>
-                <ReviewCard review={review} />
-              </li>
-            </Link>
-          );
-        })}
-      </ul>
+      <div className={styles.a}>
+        <h1>Popular Reviews</h1>
+        <ul>
+          {reviews.map((review) => {
+            return (
+              <Link key={review.review_id} to={`/reviews/${review.review_id}`}>
+                <li>
+                  <ReviewCard review={review} />
+                </li>
+              </Link>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

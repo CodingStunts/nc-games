@@ -21,7 +21,7 @@ const AllReviews = () => {
   };
 
   return (
-    <div>
+    <div className={styles.a}>
       <Navbar />
       <Sidebar />
       <div className={styles.AllReviews}>

@@ -13,15 +13,18 @@ import { UserContext } from "../contexts/UserContext";
 
 const ReviewPage = () => {
   const { review_id } = useParams();
+  const { user } = useContext(UserContext);
+
   const [review, setReview] = useState([]);
   const [likes, setLikes] = useState();
   const [comment, setComment] = useState();
-  const { user } = useContext(UserContext);
+  const [dateProper, setDateProper] = useState();
 
   useEffect(() => {
     getReviewByID(review_id).then((reviewData) => {
       setReview(reviewData);
       setLikes(reviewData.votes);
+      setDateProper(reviewData.created_at.slice(0, 10));
     });
   }, []);
 
@@ -53,7 +56,7 @@ const ReviewPage = () => {
             <img src={review.review_img_url} width="350" />
             <br />
             <h2>Review by @{review.owner}</h2>
-            <h2>Posted: {review.created_at}</h2>
+            <h2>Posted: {dateProper}</h2>
             <br />
             <p>{review.review_body}</p>
             <br />
@@ -62,7 +65,7 @@ const ReviewPage = () => {
             <h3>Game designer: {review.designer}</h3>
             <br />
             <br />
-            <h3>Upvote: {likes}</h3>
+            <h3>👍 {likes}</h3>
             <button onClick={handleUpvote}>Like</button>
             <h3>Comments: {review.comment_count}</h3>
             <form>

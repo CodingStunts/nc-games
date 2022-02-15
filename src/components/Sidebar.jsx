@@ -14,23 +14,25 @@ const Sidebar = () => {
 
   return (
     <div className={styles.Sidebar}>
-      <Link to="/reviews">
-        <h2>All Reviews</h2>
-      </Link>
-      <h2>Categories</h2>
-      <ul>
-        {categories.map((category) => {
-          return (
-            <Link
-              key={category.slug}
-              to={`/reviews/categories/${category.slug}`}
-            >
-              <li>{category.slug}</li>
-            </Link>
-          );
-        })}
-      </ul>
-      <br></br>
+      <div className={styles.a}>
+        <Link to="/reviews">
+          <h2 className={styles.AllReviewsTitle}>All Reviews</h2>
+        </Link>
+        <h2>Categories:</h2>
+        <ul>
+          {categories.map((category) => {
+            return (
+              <Link
+                key={category.slug}
+                to={`/reviews/categories/${category.slug}`}
+              >
+                <li className={styles.Categories}>{category.slug}</li>
+              </Link>
+            );
+          })}
+        </ul>
+        <br></br>
+      </div>
     </div>
   );
 };

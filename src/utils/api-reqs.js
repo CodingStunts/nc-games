@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const myAPI = axios.create({
-  baseURL: `https://jays-games-server.herokuapp.com/api`,
+  baseURL: `https://jays-games-review-site.herokuapp.com/api`,
 });
 
 //GET ALL REQS

@@ -15,16 +15,19 @@ const Community = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.a}>
       <Navbar />
       <Sidebar />
       <div className={styles.Community}>
         <h1>Community</h1>
         {users.map((user) => {
           return (
-            <Link key={user.username} to={`/community/${user.username}`}>
-              <li>{user.username}</li>
-            </Link>
+            <ul className={styles.User}>
+              <Link key={user.username} to={`/community/${user.username}`}>
+                <li>{user.avatar_url}</li>
+                <li>{user.username}</li>
+              </Link>
+            </ul>
           );
         })}
       </div>

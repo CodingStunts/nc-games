@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
       <Link to="/home">
-        <h1>NC Games</h1>
+        <h1 className={styles.Title}>Room with a Review!</h1>
       </Link>
       <Link to="/community">
-        <h3>Community</h3>
+        <h3 className={styles.CommunityTitle}>Community</h3>
       </Link>
       <LoggedInUser />
     </nav>
