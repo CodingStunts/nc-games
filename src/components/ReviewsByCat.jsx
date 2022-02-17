@@ -17,7 +17,6 @@ const ReviewsByCat = () => {
   useEffect(() => {
     getCatReviews(category).then((reviewsData) => {
       setReviews(reviewsData);
-      console.log(reviewsData);
     });
   }, [category]);
 
