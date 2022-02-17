@@ -13,7 +13,7 @@ const SingleUser = () => {
     getUserByID(username).then((userData) => {
       setUser(userData);
     });
-  }, []);
+  }, [username]);
 
   return (
     <div className={styles.a}>
@@ -26,6 +26,7 @@ const SingleUser = () => {
             <br />
             <img
               src={user[0].avatar_url}
+              alt="user avatar"
               width="100"
               className={styles.UserPic}
             />

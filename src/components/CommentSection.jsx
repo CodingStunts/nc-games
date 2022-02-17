@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../Main.module.css";
 import CommentCard from "./CommentCard";
-import { patchCommentVotes } from "../utils/api-reqs";
 
 const CommentSection = () => {
   const { review_id } = useParams();
@@ -13,7 +12,7 @@ const CommentSection = () => {
     getCommentsByReview(review_id).then((commentData) => {
       setComments(commentData);
     });
-  }, [comments]);
+  }, [comments, review_id]);
 
   return (
     <div className={styles.CommentSection}>

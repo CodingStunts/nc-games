@@ -8,10 +8,8 @@ import ReviewsByCat from "./components/ReviewsByCat";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from "./Main.module.css";
 import "./App.css";
-import { useState } from "react";
 
 function App() {
-  const [user, setUser] = useState("Log in");
   return (
     <BrowserRouter>
       <div className={styles.App}>

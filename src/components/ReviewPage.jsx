@@ -26,7 +26,7 @@ const ReviewPage = () => {
       setLikes(reviewData.votes);
       setDateProper(reviewData.created_at.slice(0, 10));
     });
-  }, []);
+  }, [review_id]);
 
   const handleUpvote = () => {
     setLikes((currLikes) => {
@@ -54,7 +54,7 @@ const ReviewPage = () => {
             <h1>{review.title}</h1>
             <br />
             <br />
-            <img src={review.review_img_url} width="350" />
+            <img src={review.review_img_url} alt="stock game" width="350" />
             <br />
             <h2>Review by @{review.owner}</h2>
             <h2>Posted: {dateProper}</h2>

@@ -4,9 +4,7 @@ import { useContext } from "react";
 import styles from "../Main.module.css";
 
 const StartUp = () => {
-  const { loggedIn, logOut, user, setUser } = useContext(UserContext);
-
-  const logInStorage = window.localStorage;
+  const { user, setUser } = useContext(UserContext);
 
   const handleUserSelect = (event) => {
     setUser(event.target.value);
