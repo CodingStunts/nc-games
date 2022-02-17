@@ -6,7 +6,10 @@ const ReviewCard = ({ review }) => {
       <p>Game title: {review.title}</p>
       <p>Game designer: {review.designer}</p>
       <p>Review author: {review.owner}</p>
-      <p>👍 {review.votes} </p>
+      <br />
+      <p>
+        Comments: {review.comment_count} · Likes: {review.votes}
+      </p>
     </div>
   );
 };

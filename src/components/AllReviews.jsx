@@ -27,17 +27,26 @@ const AllReviews = () => {
       <div className={styles.AllReviews}>
         <h1>All Reviews</h1>
         <SortOrder updateReviews={updateReviews} />
-        <ul>
-          {reviews.map((review) => {
-            return (
-              <Link key={review.review_id} to={`/reviews/${review.review_id}`}>
-                <li>
-                  <ReviewCard review={review} />
-                </li>
-              </Link>
-            );
-          })}
-        </ul>
+        {reviews ? (
+          <ul>
+            {reviews.map((review) => {
+              return (
+                <Link
+                  key={review.review_id}
+                  to={`/reviews/${review.review_id}`}
+                >
+                  <li>
+                    <ReviewCard review={review} />
+                  </li>
+                </Link>
+              );
+            })}
+          </ul>
+        ) : (
+          <div className={styles.AllReviews}>
+            <h1>Loading...</h1>
+          </div>
+        )}
       </div>
     </div>
   );

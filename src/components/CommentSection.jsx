@@ -13,13 +13,12 @@ const CommentSection = () => {
     getCommentsByReview(review_id).then((commentData) => {
       setComments(commentData);
     });
-  }, []);
+  }, [comments]);
 
   return (
     <div className={styles.CommentSection}>
       {comments ? (
         <>
-          <h2>Comments</h2>
           <ul>
             {comments.map((comment) => {
               return (

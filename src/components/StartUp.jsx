@@ -12,7 +12,9 @@ const StartUp = () => {
 
   return (
     <div className={styles.StartUp}>
-      <h1>Welcome to NC Game Reviews!</h1>
+      <h2>Welcome to</h2>
+      <h1>Room with a Review!</h1>
+      <h3>A games review site.</h3>
       <br></br>
       <h4>Please log in to proceed to site</h4>
       <form>

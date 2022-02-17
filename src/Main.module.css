@@ -3,9 +3,10 @@
   position: absolute;
   flex-direction: row;
   width: 100vw;
+  min-height: 100vh;
   grid-template-rows: 10% 90%;
   grid-template-columns: 15% 85%;
-  background-color: rgb(204, 255, 199);
+  background-color: #d1bce3;
 }
 
 a {
@@ -14,14 +15,16 @@ a {
 }
 
 .Sidebar {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 15.1vh;
   padding-top: 1vh;
-  border: solid 1px darkgreen;
+  border: solid 2px #e07a5f;
   padding-left: 20px;
   width: 15vw;
   height: 100vh;
   position: fixed;
-  background-color: lightseagreen;
+  background-color: #3c91e6;
 }
 
 .AllReviewsTitle {
@@ -37,14 +40,14 @@ a {
 }
 
 .Navbar {
-  display: inline;
-  float: left;
+  display: flex;
+  align-items: center;
   position: fixed;
-  border: solid 1px darkgreen;
+  border: solid 2px #e07a5f;
+  padding-left: 30px;
   width: 100vw;
   height: 15vh;
-  position: fixed;
-  background-color: rgb(185, 218, 255);
+  background-color: #3c91e6;
 }
 
 .Title {
@@ -55,40 +58,55 @@ a {
 }
 
 .Popular {
-  margin-left: 15vw;
+  margin-left: 20vw;
   margin-top: 15vh;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
 }
 
 .StartUp {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  border: 2px #e07a5f solid;
+  border-radius: 30px;
+  padding: 40px;
+  min-width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10%;
+  background-color: #ffc100;
+}
+
+.EntryForm {
+  align-content: center;
+  border: 2px #e07a5f solid;
+  padding-left: 50px;
 }
 
 h1 {
   display: inline;
-  margin-left: 5vw;
-  margin-right: 30vw;
-  text-align: center;
 }
 
 h3 {
   display: inline;
-  margin-left: 10vw;
-  margin-right: 0vw;
 }
 
 .LoggedInUser {
-  display: inline;
-  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   position: inherit;
-  border: 1px darkgreen solid;
-  height: 14.9vh;
-  width: 50vw;
-  margin-left: 10vw;
-  margin-right: 0vw;
-  padding-left: 15px;
-  background-color: rgb(195, 255, 106);
+  border: 2px #e07a5f solid;
+  border-radius: 30px;
+  height: 10vh;
+  width: 25vw;
+  margin-left: 70%;
+  padding-left: 10px;
+  background-color: #ffc100;
   font-size: 18px;
 }
 
@@ -98,8 +116,10 @@ h3 {
 }
 
 .Community {
-  margin-left: 15vw;
-  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  margin-top: 15vh;
   padding-left: 20px;
 }
 
@@ -116,9 +136,13 @@ h3 {
 }
 
 .SingleUser {
-  border: darkgreen solid 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #e07a5f solid 3px;
   border-radius: 35px;
-  background-color: lightseagreen;
+  background-color: #ffc100;
   margin-left: 25vw;
   margin-top: 20vh;
   padding-left: 20px;
@@ -126,12 +150,12 @@ h3 {
 }
 
 .UserPic {
-  border: 2px seagreen solid;
+  border: 2px #e07a5f solid;
   border-radius: 30px;
 }
 
 .AllReviews {
-  margin-left: 15vw;
+  margin-left: 20vw;
   margin-top: 15vh;
   padding-top: 20px;
   padding-left: 20px;
@@ -142,37 +166,47 @@ h3 {
 }
 
 .ReviewCard {
-  border: 2px solid darkgreen;
+  border: 2px solid #e07a5f;
   border-radius: 45px;
   margin: 30px;
   padding: 20px;
-  background-color: lightseagreen;
+  background-color: #ffc100;
   text-align: center;
 }
 
 .SingleReview {
   margin-left: 15vw;
   margin-top: 15vh;
+  max-width: 70%;
   padding-left: 75px;
   padding-top: 30px;
   text-align: center;
 }
 
 .CatReviews {
-  margin-left: 15vw;
-  margin-top: 10vh;
+  margin-left: 20vw;
+  margin-top: 15vh;
+  padding-top: 20px;
   padding-left: 20px;
 }
 
+.CommentSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Comment {
-  border: solid 1px black;
+  flex: wrap;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #e07a5f;
   border-radius: 45px;
-  background-color: darkgreen;
+  background-color: #ffc100;
   padding: 10px;
-  padding-left: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 60vw;
+  width: 70vh;
 }
 
 ul {
@@ -183,6 +217,6 @@ button {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  border: mediumseagreen 2px solid;
-  background-color: palegreen;
+  border: #e07a5f 2px solid;
+  background-color: #00d9c0;
 }

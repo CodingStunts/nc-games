@@ -53,6 +53,7 @@ const ReviewPage = () => {
           <>
             <h1>{review.title}</h1>
             <br />
+            <br />
             <img src={review.review_img_url} width="350" />
             <br />
             <h2>Review by @{review.owner}</h2>
@@ -67,7 +68,7 @@ const ReviewPage = () => {
             <br />
             <h3>👍 {likes}</h3>
             <button onClick={handleUpvote}>Like</button>
-            <h3>Comments: {review.comment_count}</h3>
+            <br />
             <form>
               <label>
                 Write your comment here:
@@ -81,6 +82,8 @@ const ReviewPage = () => {
                 Post
               </button>
             </form>
+            <h2>Comments</h2>
+            <h3>Comments: {review.comment_count}</h3>
             <CommentSection review_id={review_id} />
           </>
         ) : null}
