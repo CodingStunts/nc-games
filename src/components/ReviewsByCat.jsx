@@ -24,7 +24,7 @@ const ReviewsByCat = () => {
     <div>
       <Navbar />
       <Sidebar />
-      {reviews ? (
+      {reviews.length > 0 ? (
         <div className={styles.CatReviews}>
           <h1>{`${capitalCategory}`} Reviews</h1>
           <ul>

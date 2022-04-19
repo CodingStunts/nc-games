@@ -33,7 +33,11 @@ const SingleUser = () => {
             <br />
             <h3> @{user[0].username}</h3>
           </>
-        ) : null}
+        ) : (
+          <div className={styles.CatReviews}>
+            <h1>Loading...</h1>
+          </div>
+        )}
       </div>
     </div>
   );

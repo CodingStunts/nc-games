@@ -37,7 +37,6 @@ export const getComments = () => {
 //Get most popular reviews specifically
 export const getPopReviews = () => {
   return myAPI.get("/reviews?sort_by=votes").then(({ data }) => {
-    //data.reviews.slice
     return data.reviews;
   });
 };

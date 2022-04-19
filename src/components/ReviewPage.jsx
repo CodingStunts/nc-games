@@ -49,7 +49,7 @@ const ReviewPage = () => {
       <Sidebar />
       <Navbar />
       <div className={styles.SingleReview}>
-        {review ? (
+        {review.title ? (
           <>
             <h1>{review.title}</h1>
             <br />
@@ -86,7 +86,11 @@ const ReviewPage = () => {
             <h3>Comments: {review.comment_count}</h3>
             <CommentSection review_id={review_id} />
           </>
-        ) : null}
+        ) : (
+          <div className={styles.AllReviews}>
+            <h1>Loading...</h1>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ const AllReviews = () => {
       <div className={styles.AllReviews}>
         <h1>All Reviews</h1>
         <SortOrder updateReviews={updateReviews} />
-        {reviews ? (
+        {reviews.length > 0 ? (
           <ul>
             {reviews.map((review) => {
               return (
