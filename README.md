@@ -1,4 +1,4 @@
-Link to hosted version: room-with-a-review.netlify.app
+Link to hosted version: https://room-with-a-review.netlify.app
 
 Hello and welcome to my project page! This React project forms the front end element of my portfolio piece which is accompanied by a backend server made using Express and node.js. React is the framework used for this project, for more information on the backend portion, please look at the nc-games-backend repo also on this github account.
 
