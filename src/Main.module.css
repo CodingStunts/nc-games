@@ -93,10 +93,12 @@
 }
 
 .Popular {
-  margin-left: 20vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 15vh;
   padding-top: 20px;
-  padding-left: 20px;
 }
 
 .StartUp {
@@ -151,11 +153,12 @@ h3 {
 }
 
 .Community {
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  margin-left: 20vw;
+  align-items: center;
   margin-top: 15vh;
-  padding-left: 20px;
+  padding-top: 20px;
 }
 
 /* .CommunityTitle {
@@ -164,10 +167,11 @@ h3 {
   margin-right: 25px;
 } */
 
-.User {
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.UserPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .SingleUser {
@@ -178,9 +182,7 @@ h3 {
   border: #e07a5f solid 3px;
   border-radius: 35px;
   background-color: #ffc100;
-  margin-left: 25vw;
   margin-top: 20vh;
-  padding-left: 20px;
   padding: 25px;
 }
 
@@ -190,10 +192,12 @@ h3 {
 }
 
 .AllReviews {
-  margin-left: 20vw;
   margin-top: 15vh;
   padding-top: 20px;
-  padding-left: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .SortOrder {
@@ -203,6 +207,7 @@ h3 {
 .ReviewCard {
   border: 2px solid #e07a5f;
   border-radius: 45px;
+  min-width: 50vw;
   margin: 30px;
   padding: 20px;
   background-color: #ffc100;
@@ -212,7 +217,7 @@ h3 {
 .SingleReview {
   margin-left: 15vw;
   margin-top: 15vh;
-  max-width: 70%;
+  max-width: 70;
   padding-left: 75px;
   padding-top: 30px;
   text-align: center;

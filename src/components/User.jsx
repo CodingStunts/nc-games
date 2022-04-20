@@ -16,7 +16,7 @@ const SingleUser = () => {
   }, [username]);
 
   return (
-    <div className={styles.a}>
+    <div className={styles.UserPage}>
       <Navbar />
       <div className={styles.SingleUser}>
         {user ? (

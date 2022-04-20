@@ -24,28 +24,27 @@ const Navbar = () => {
             <p className={styles.CommunityTitle}>All reviews</p>
           </li>
         </Link>
-        <Link to="/categories">
-          <li>
-            <p className={styles.CommunityTitle}>Categories ⬇</p>
-            <div className={styles.categoriesDropdown}>
-              <ul>
-                {categories.map((category) => {
-                  return (
-                    <Link
-                      key={category.slug}
-                      to={`/reviews/categories/${category.slug}`}
-                    >
-                      <li className={styles.Categories}>
-                        {category.slug.charAt(0).toUpperCase() +
-                          category.slug.slice(1)}
-                      </li>
-                    </Link>
-                  );
-                })}
-              </ul>
-            </div>
-          </li>
-        </Link>
+
+        <li>
+          <p className={styles.CommunityTitle}>Categories ⬇</p>
+          <div className={styles.categoriesDropdown}>
+            <ul>
+              {categories.map((category) => {
+                return (
+                  <Link
+                    key={category.slug}
+                    to={`/reviews/categories/${category.slug}`}
+                  >
+                    <li className={styles.Categories}>
+                      {category.slug.charAt(0).toUpperCase() +
+                        category.slug.slice(1)}
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
+          </div>
+        </li>
         <Link to="/community">
           <li>
             <p className={styles.CommunityTitle}>Community</p>
