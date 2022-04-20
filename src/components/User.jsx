@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { getUserByID } from "../utils/api-reqs";
 import styles from "../Main.module.css";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 
 const SingleUser = () => {
   const { username } = useParams();
