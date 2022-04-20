@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { getCatReviews } from "../utils/api-reqs";
 import ReviewCard from "./ReviewCard";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import styles from "../Main.module.css";
 
 const ReviewsByCat = () => {

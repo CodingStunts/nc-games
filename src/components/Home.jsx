@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import PopReviews from "./PopReviews";
 import styles from "../Main.module.css";
 

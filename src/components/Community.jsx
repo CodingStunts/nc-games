@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { getUsers } from "../utils/api-reqs";
 import styles from "../Main.module.css";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 
 const Community = () => {
   const [users, setUsers] = useState([]);

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { getReviews } from "../utils/api-reqs";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import styles from "../Main.module.css";
 import SortOrder from "./SortOrder";
 

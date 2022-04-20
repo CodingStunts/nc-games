@@ -7,7 +7,6 @@ import {
 } from "../utils/api-reqs";
 import styles from "../Main.module.css";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
 import CommentSection from "./CommentSection";
 import { UserContext } from "../contexts/UserContext";
 
