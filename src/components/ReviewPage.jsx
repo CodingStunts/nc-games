@@ -57,7 +57,9 @@ const ReviewPage = () => {
             <h2>Review by @{review.owner}</h2>
             <h2>Posted: {dateProper}</h2>
             <br />
-            <p>{review.review_body}</p>
+            <section className={styles.description}>
+              <p>{review.review_body}</p>
+            </section>
             <br />
             <h3>Game category: {review.category}</h3>
             <br />

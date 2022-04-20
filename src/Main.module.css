@@ -200,22 +200,21 @@ h3 {
 }
 
 .SingleReview {
-  margin-left: 15vw;
-  margin-top: 15vh;
-  max-width: 70;
-  padding-left: 75px;
-  padding-top: 30px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-}
-
-.CatReviews {
-  margin-left: 20vw;
   margin-top: 15vh;
-  padding-top: 20px;
-  padding-left: 20px;
+  min-width: 70vw;
+  padding-top: 30px;
+}
+.description {
+  max-width: 60vw;
 }
 
 .CommentSection {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +230,7 @@ h3 {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 70vh;
+  width: 70vw;
 }
 
 ul {
