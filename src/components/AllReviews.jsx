@@ -23,7 +23,6 @@ const AllReviews = () => {
   return (
     <div className={styles.a}>
       <Navbar />
-      <Sidebar />
       <div className={styles.AllReviews}>
         <h1>All Reviews</h1>
         <SortOrder updateReviews={updateReviews} />

@@ -26,7 +26,9 @@ const Sidebar = () => {
                 key={category.slug}
                 to={`/reviews/categories/${category.slug}`}
               >
-                <li className={styles.Categories}>{category.slug}</li>
+                <li className={styles.Categories}>
+                  {category.slug.charAt(0).toUpperCase()}
+                </li>
               </Link>
             );
           })}

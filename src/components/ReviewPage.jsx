@@ -46,7 +46,6 @@ const ReviewPage = () => {
 
   return (
     <div>
-      <Sidebar />
       <Navbar />
       <div className={styles.SingleReview}>
         {review.title ? (

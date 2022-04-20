@@ -18,7 +18,6 @@ const SingleUser = () => {
   return (
     <div className={styles.a}>
       <Navbar />
-      <Sidebar />
       <div className={styles.SingleUser}>
         {user ? (
           <>

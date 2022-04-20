@@ -17,7 +17,6 @@ const Community = () => {
   return (
     <div className={styles.a}>
       <Navbar />
-      <Sidebar />
       {users.length > 0 ? (
         <div className={styles.Community}>
           <h1>Community</h1>
