@@ -14,7 +14,7 @@ const StartUp = () => {
     <div className={styles.StartUp}>
       <div className={styles.StartUpForm}>
         <h2>Welcome to</h2>
-        <h1 className={styles.Title}>Room with a Review!</h1>
+        <h1 className={styles.LoginTitle}>Room with a Review!</h1>
         <h3>A games review site.</h3>
         <hr />
         <h4>Please log in to proceed to site</h4>

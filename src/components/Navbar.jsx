@@ -21,12 +21,12 @@ const Navbar = () => {
       <ul>
         <Link to="/reviews">
           <li>
-            <p className={styles.CommunityTitle}>All reviews</p>
+            <p>All reviews</p>
           </li>
         </Link>
 
         <li>
-          <p className={styles.CommunityTitle}>Categories ⬇</p>
+          <p>Categories ▼</p>
           <div className={styles.categoriesDropdown}>
             <ul>
               {categories.map((category) => {
@@ -47,7 +47,7 @@ const Navbar = () => {
         </li>
         <Link to="/community">
           <li>
-            <p className={styles.CommunityTitle}>Community</p>
+            <p>Community</p>
           </li>
         </Link>
         <li>

@@ -42,7 +42,8 @@ const ReviewsByCat = () => {
         </div>
       ) : (
         <div className={styles.CatReviews}>
-          <h1>Loading...</h1>
+          <h1>{`${capitalCategory}`} Reviews</h1>
+          <h2>Loading...</h2>
         </div>
       )}
     </div>

@@ -4,31 +4,28 @@
   flex-direction: row;
   width: 100vw;
   min-height: 100vh;
-  grid-template-rows: 10% 90%;
-  grid-template-columns: 15% 85%;
   background-color: #d1bce3;
 }
 
-/*Local fonts*/
+/*Local fonts and text styling*/
 @font-face {
   font-family: app-title;
   src: url(media/Review-Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
-
 @font-face {
   font-family: general-font;
   src: url(media/Review-Fonts/Akshar/Akshar-VariableFont_wght.ttf);
 }
-
 body {
   font-family: general-font, Arial, Helvetica, sans-serif;
 }
 
+/* 
 .AllReviewsTitle {
   font-size: 30px;
   text-decoration: underline;
   margin-bottom: 50px;
-}
+} */
 
 .Categories {
   font-size: 18px;
@@ -40,6 +37,7 @@ body {
 .Navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   position: fixed;
   border: solid 2px #e07a5f;
@@ -48,24 +46,22 @@ body {
   height: 15vh;
   background-color: #3c91e6;
 }
-
 .Navbar ul {
   display: flex;
 }
 .Navbar ul li {
   position: relative;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 .Navbar ul li p {
-  font-size: 18px;
+  font-size: 2vw;
   color: black;
-  text-decoration: none;
   transition: all 0.3s;
 }
 .Navbar ul li p:hover {
   color: white;
 }
-
+/*Category dropdown menu*/
 .categoriesDropdown {
   display: none;
 }
@@ -85,10 +81,27 @@ body {
   width: 120px;
   padding: 5px;
 }
+.LoggedInUser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px #e07a5f solid;
+  border-radius: 20px;
+  height: 9vh;
+  width: 20vw;
+  padding: 5px;
+  margin-right: 25px;
+  background-color: #ffc100;
+}
+
+.LoginTitle {
+  font-family: app-title, Arial, Helvetica, sans-serif;
+  font-size: 7.5vw;
+}
 
 .Title {
   font-family: app-title, Arial, Helvetica, sans-serif;
-  font-size: 4em;
+  font-size: 4vw;
 }
 
 .Popular {
@@ -100,13 +113,13 @@ body {
   padding-top: 20px;
 }
 
+/*Landing Page*/
 .StartUp {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
-
 .StartUpForm {
   display: flex;
   flex-direction: column;
@@ -119,7 +132,6 @@ body {
   width: 50vw;
   background-color: #ffc100;
 }
-
 hr {
   border: 2px solid black;
   border-radius: 35%;
@@ -131,29 +143,6 @@ hr {
   border: 2px #e07a5f solid;
   padding-left: 50px;
 }
-
-h1 {
-  display: inline;
-}
-
-h3 {
-  display: inline;
-}
-
-/* .LoggedInUser {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: inherit;
-  border: 2px #e07a5f solid;
-  border-radius: 30px;
-  height: 10vh;
-  width: 25vw;
-  margin-left: 70%;
-  padding-left: 10px;
-  background-color: #ffc100;
-  font-size: 18px;
-} */
 
 .Logout {
   display: inline;
@@ -169,11 +158,9 @@ h3 {
   padding-top: 20px;
 }
 
-/* .CommunityTitle {
-  font-size: 25px;
-  margin-left: 40px;
-  margin-right: 25px;
-} */
+.NavTitles {
+  font-size: 5vw;
+}
 
 .UserPage {
   width: 100vw;
@@ -197,6 +184,15 @@ h3 {
 .UserPic {
   border: 2px #e07a5f solid;
   border-radius: 30px;
+}
+
+.CatReviews {
+  margin-top: 15vh;
+  padding-top: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .AllReviews {
@@ -250,10 +246,10 @@ h3 {
   border: solid 2px #e07a5f;
   border-radius: 45px;
   background-color: #ffc100;
-  padding: 10px;
+  padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 70vw;
+  width: 65vw;
 }
 
 ul {
@@ -266,4 +262,8 @@ button {
   border-radius: 10px;
   border: #e07a5f 2px solid;
   background-color: #00d9c0;
+}
+
+a {
+  text-decoration: none;
 }

@@ -42,7 +42,8 @@ const AllReviews = () => {
           </ul>
         ) : (
           <div className={styles.AllReviews}>
-            <h1>Loading...</h1>
+            <h1>All Reviews</h1>
+            <h2>Loading...</h2>
           </div>
         )}
       </div>
