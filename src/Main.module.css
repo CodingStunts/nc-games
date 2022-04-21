@@ -9,6 +9,21 @@
   background-color: #d1bce3;
 }
 
+/*Local fonts*/
+@font-face {
+  font-family: app-title;
+  src: url(media/Review-Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: general-font;
+  src: url(media/Review-Fonts/Akshar/Akshar-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: general-font, Arial, Helvetica, sans-serif;
+}
+
 .AllReviewsTitle {
   font-size: 30px;
   text-decoration: underline;
@@ -28,7 +43,7 @@
   justify-content: space-between;
   position: fixed;
   border: solid 2px #e07a5f;
-  padding-left: 0, 5%;
+  padding-left: 3vw;
   width: 100vw;
   height: 15vh;
   background-color: #3c91e6;
@@ -72,9 +87,8 @@
 }
 
 .Title {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 40px;
+  font-family: app-title, Arial, Helvetica, sans-serif;
+  font-size: 4em;
 }
 
 .Popular {
@@ -88,7 +102,13 @@
 
 .StartUp {
   display: flex;
-  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.StartUpForm {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -96,11 +116,14 @@
   border: 2px #e07a5f solid;
   border-radius: 30px;
   padding: 40px;
-  min-width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: 10%;
+  width: 50vw;
   background-color: #ffc100;
+}
+
+hr {
+  border: 2px solid black;
+  border-radius: 35%;
+  width: 35vw;
 }
 
 .EntryForm {
