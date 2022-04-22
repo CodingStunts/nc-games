@@ -17,7 +17,7 @@ const PopReviews = () => {
   return (
     <div className={styles.Popular}>
       <h1>Popular Reviews</h1>
-      {reviews ? (
+      {reviews.length > 0 ? (
         <ul>
           {reviews.map((review) => {
             return (
