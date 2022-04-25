@@ -31,7 +31,6 @@ const PopReviews = () => {
         </ul>
       ) : (
         <div className={styles.Popular}>
-          <h1>Popular Reviews</h1>
           <h2>Loading...</h2>
         </div>
       )}
