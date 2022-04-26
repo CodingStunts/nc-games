@@ -5,6 +5,7 @@ import { getReviews } from "../utils/api-reqs";
 import Navbar from "./Navbar";
 import styles from "../Main.module.css";
 import SortOrder from "./SortOrder";
+import { NewtonsCradle } from "@uiball/loaders";
 
 const AllReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -43,7 +44,7 @@ const AllReviews = () => {
         ) : (
           <div className={styles.AllReviews}>
             <h1>All Reviews</h1>
-            <h2>Loading...</h2>
+            <NewtonsCradle color="#e07a5f" />
           </div>
         )}
       </div>

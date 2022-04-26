@@ -9,6 +9,7 @@ import styles from "../Main.module.css";
 import Navbar from "./Navbar";
 import CommentSection from "./CommentSection";
 import { UserContext } from "../contexts/UserContext";
+import { NewtonsCradle } from "@uiball/loaders";
 
 const ReviewPage = () => {
   const { review_id } = useParams();
@@ -88,7 +89,7 @@ const ReviewPage = () => {
           </>
         ) : (
           <div className={styles.AllReviews}>
-            <h1>Loading...</h1>
+            <NewtonsCradle color="#e07a5f" />
           </div>
         )}
       </div>

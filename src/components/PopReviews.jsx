@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { getPopReviews } from "../utils/api-reqs";
+import { NewtonsCradle } from "@uiball/loaders";
 
 const PopReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -31,7 +32,7 @@ const PopReviews = () => {
         </ul>
       ) : (
         <div className={styles.Popular}>
-          <h2>Loading...</h2>
+          <NewtonsCradle color="#e07a5f" />
         </div>
       )}
     </div>

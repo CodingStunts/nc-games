@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getUsers } from "../utils/api-reqs";
 import styles from "../Main.module.css";
 import Navbar from "./Navbar";
+import { NewtonsCradle } from "@uiball/loaders";
 
 const Community = () => {
   const [users, setUsers] = useState([]);
@@ -32,7 +33,7 @@ const Community = () => {
         </div>
       ) : (
         <div className={styles.AllReviews}>
-          <h1>Loading...</h1>
+          <NewtonsCradle color="#e07a5f" />
         </div>
       )}
     </div>

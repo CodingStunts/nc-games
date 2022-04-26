@@ -5,6 +5,7 @@ import { getCatReviews } from "../utils/api-reqs";
 import ReviewCard from "./ReviewCard";
 import Navbar from "./Navbar";
 import styles from "../Main.module.css";
+import { NewtonsCradle } from "@uiball/loaders";
 
 const ReviewsByCat = () => {
   const [reviews, setReviews] = useState([]);
@@ -43,7 +44,7 @@ const ReviewsByCat = () => {
       ) : (
         <div className={styles.CatReviews}>
           <h1>{`${capitalCategory}`} Reviews</h1>
-          <h2>Loading...</h2>
+          <NewtonsCradle color="#e07a5f" />
         </div>
       )}
     </div>
