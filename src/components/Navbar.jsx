@@ -18,7 +18,7 @@ const Navbar = () => {
       <Link to="/home">
         <h1 className={styles.Title}>Room with a Review!</h1>
       </Link>
-      <ul>
+      <ul className={styles.navbarul}>
         <Link to="/reviews">
           <li>
             <p>All reviews</p>
@@ -54,6 +54,14 @@ const Navbar = () => {
           <LoggedInUser />
         </li>
       </ul>
+      <input type="checkbox" id="checkbox" class={styles.checkbox} />
+      <label for="checkbox" className={styles.checkbutton}>
+        <img
+          id="menu-icon"
+          src={require("../media/menu-icon.png")}
+          alt="menu-icon"
+        />
+      </label>
     </nav>
   );
 };

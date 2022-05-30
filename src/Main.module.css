@@ -33,6 +33,16 @@ body {
   margin-bottom: 20px;
 }
 
+/*App Titles*/
+.LoginTitle {
+  font-family: app-title, Arial, Helvetica, sans-serif;
+  font-size: 7.5vw;
+}
+.Title {
+  font-family: app-title, Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+}
+
 /*Navigation Styling*/
 .Navbar {
   display: flex;
@@ -40,27 +50,27 @@ body {
   justify-content: center;
   justify-content: space-between;
   position: fixed;
-  border: solid 2px #e07a5f;
+  border-bottom: solid 2px #e07a5f;
   padding-left: 3vw;
   width: 100vw;
   height: 15vh;
   background-color: #3c91e6;
 }
-.Navbar ul {
+.navbarul {
   display: flex;
 }
-.Navbar ul li {
+.navbarul li {
   position: relative;
   padding: 10px 25px;
 }
-.Navbar ul li p {
+.navbarul li p {
   font-size: 2vw;
 }
 /*Category dropdown menu*/
 .categoriesDropdown {
   display: none;
 }
-.Navbar ul li:hover .categoriesDropdown {
+.navbarul li:hover .categoriesDropdown {
   display: block;
   position: absolute;
   left: 0;
@@ -76,7 +86,6 @@ body {
   width: 120px;
   padding: 5px;
 }
-
 .LoggedInUser {
   display: flex;
   flex-direction: row;
@@ -89,15 +98,40 @@ body {
   margin-right: 25px;
   background-color: #ffc100;
 }
-
-/*App Titles*/
-.LoginTitle {
-  font-family: app-title, Arial, Helvetica, sans-serif;
-  font-size: 7.5vw;
+.Logout {
+  display: inline;
+  position: relative;
 }
-.Title {
-  font-family: app-title, Arial, Helvetica, sans-serif;
-  font-size: 4vw;
+
+/*Responsive Nav*/
+/* .checkbox {
+  display: none;
+} */
+.checkbutton {
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+@media (max-width: 1080px) {
+  .Title {
+    font-size: 40px;
+  }
+  .checkbutton {
+    display: block;
+  }
+  .navbarul {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3c91e6;
+    top: 10vh;
+    left: -120%;
+    text-align: center;
+  }
+  .checkbox:checked ~ .navbarul {
+    left: 0;
+  }
 }
 
 .Popular {
@@ -138,11 +172,6 @@ hr {
   align-content: center;
   border: 2px #e07a5f solid;
   padding-left: 50px;
-}
-
-.Logout {
-  display: inline;
-  position: relative;
 }
 
 .Community {
