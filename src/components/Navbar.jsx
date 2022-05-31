@@ -74,7 +74,7 @@ const Navbar = () => {
 
       {showSideMenu && !isDesktopResolution && (
         <aside className={styles.sidebar}>
-          <button onClick={toggleSideMenu}>x</button>
+          {/*  <button onClick={toggleSideMenu}>x</button> */}
           <ul className={styles.sidebarul}>
             <Link to="/reviews">
               <li>

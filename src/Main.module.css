@@ -107,6 +107,18 @@ button {
   margin-right: 25px;
   background-color: #ffc100;
 }
+.LoggedInUserSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #e07a5f solid;
+  border-radius: 20px;
+  height: 16vh;
+  width: 20vw;
+  padding: 5px;
+  margin-right: 25px;
+  background-color: #ffc100;
+}
 .Logout {
   display: inline;
   position: relative;
