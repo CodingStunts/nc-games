@@ -87,6 +87,7 @@ button {
   background-color: #3c91e6;
   border-radius: 10px;
 }
+
 .categoriesDropdown ul {
   display: block;
   margin: 10px;
@@ -144,6 +145,14 @@ button {
   border-radius: 0px 0px 10px 10px;
   border: #e07a5f 2px solid;
   background-color: #3c91e6;
+}
+.sidebarul li:hover .categoriesDropdown {
+  display: block;
+  position: absolute;
+  right: 33vw;
+  top: 10vh;
+  background-color: #3c91e6;
+  border-radius: 10px;
 }
 
 /*Popular reviews / Home page*/
