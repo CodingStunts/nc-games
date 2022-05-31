@@ -58,7 +58,7 @@ export const getCommentsByReview = (review_id) => {
   });
 };
 
-//PATCH REQS
+//PATCH REQS - Upvote by 1.
 export const patchReviewVotes = (review_id) => {
   return myAPI.patch(`/reviews/${review_id}`, { inc_votes: 1 });
 };

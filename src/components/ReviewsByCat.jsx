@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { getCatReviews } from "../utils/api-reqs";
 import ReviewCard from "./ReviewCard";
 import Navbar from "./Navbar";

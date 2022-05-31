@@ -33,61 +33,13 @@ body {
   margin-bottom: 20px;
 }
 
-/*Navigation Styling*/
-.Navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  position: fixed;
-  border: solid 2px #e07a5f;
-  padding-left: 3vw;
-  width: 100vw;
-  height: 15vh;
-  background-color: #3c91e6;
-}
-.Navbar ul {
-  display: flex;
-}
-.Navbar ul li {
-  position: relative;
-  padding: 10px 25px;
-}
-.Navbar ul li p {
-  font-size: 2vw;
-}
-/*Category dropdown menu*/
-.categoriesDropdown {
-  display: none;
-}
-.Navbar ul li:hover .categoriesDropdown {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: #3c91e6;
-  border-radius: 10px;
-}
-.categoriesDropdown ul {
-  display: block;
+button {
+  padding: 10px;
   margin: 10px;
-}
-.categoriesDropdown ul li {
-  width: 120px;
-  padding: 5px;
-}
-
-.LoggedInUser {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 2px #e07a5f solid;
-  border-radius: 20px;
-  height: 9vh;
-  width: 20vw;
-  padding: 5px;
-  margin-right: 25px;
-  background-color: #ffc100;
+  border-radius: 10px;
+  border: #e07a5f 2px solid;
+  background-color: #00d9c0;
+  cursor: pointer;
 }
 
 /*App Titles*/
@@ -100,6 +52,110 @@ body {
   font-size: 4vw;
 }
 
+/*Navigation Styling*/
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: solid 2px #e07a5f;
+  padding-left: 3vw;
+  width: 100vw;
+  height: 15vh;
+  background-color: #3c91e6;
+}
+.navbarul {
+  display: flex;
+}
+.navbarul li {
+  position: relative;
+  padding: 10px 25px;
+}
+.navbarul li p {
+  font-size: 2vw;
+}
+/*Category dropdown menu*/
+.categoriesDropdown {
+  display: none;
+}
+.navbarul li:hover .categoriesDropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #3c91e6;
+  border-radius: 10px;
+}
+
+.categoriesDropdown ul {
+  display: block;
+  margin: 10px;
+}
+.categoriesDropdown ul li {
+  width: 120px;
+  padding: 5px;
+}
+.LoggedInUser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px #e07a5f solid;
+  border-radius: 20px;
+  height: 9vh;
+  width: 20vw;
+  padding: 5px;
+  margin-right: 25px;
+  background-color: #ffc100;
+}
+.LoggedInUserSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #e07a5f solid;
+  border-radius: 20px;
+  height: 16vh;
+  width: 20vw;
+  padding: 5px;
+  margin-right: 25px;
+  background-color: #ffc100;
+}
+.Logout {
+  display: inline;
+  position: relative;
+}
+
+/*Responsive Nav & sidebar */
+.sidebarbutton {
+  margin-right: 5vw;
+}
+
+@media (max-width: 1080px) {
+  .Title {
+    font-size: 40px;
+  }
+}
+
+.sidebarul {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 12.9vh;
+  padding: 25px;
+  border-radius: 0px 0px 10px 10px;
+  border: #e07a5f 2px solid;
+  background-color: #3c91e6;
+}
+.sidebarul li:hover .categoriesDropdown {
+  display: block;
+  position: absolute;
+  right: 33vw;
+  top: 10vh;
+  background-color: #3c91e6;
+  border-radius: 10px;
+}
+
+/*Popular reviews / Home page*/
 .Popular {
   width: 100vw;
   display: flex;
@@ -138,11 +194,6 @@ hr {
   align-content: center;
   border: 2px #e07a5f solid;
   padding-left: 50px;
-}
-
-.Logout {
-  display: inline;
-  position: relative;
 }
 
 .Community {
@@ -250,14 +301,6 @@ hr {
 
 ul {
   list-style-type: none;
-}
-
-button {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  border: #e07a5f 2px solid;
-  background-color: #00d9c0;
 }
 
 a {
